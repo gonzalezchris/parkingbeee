@@ -1,12 +1,16 @@
 //
 //  AppDelegate.swift
-//  ParkingBee
+//  parkingBee
 //
-//  Created by MTSS User on 11/8/15.
-//  Copyright (c) 2015 MTSS User. All rights reserved.
+//  Created by Bingyao Li on 11/8/15.
+//  Copyright © 2015 ParkingBee. All rights reserved.
 //
 
 import UIKit
+import FBSDKCoreKit
+import Parse
+import Bolts
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        FBSDKAppEvents.activateApp()
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        Parse.enableLocalDatastore()
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions([NSObject: AnyObject]())
+        Parse.setApplicationId("rgMdaZeJsX181TmJzdbOda05YGMHOG0xtCD7UWXv",
+            clientKey: "4K6W6DGRiBZNqT5ZZ7FsqgrRnbSWskHG0A9XxyGX")
+
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        
+        
         return true
     }
 
@@ -34,13 +48,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
+    
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+  
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
 
 }
 

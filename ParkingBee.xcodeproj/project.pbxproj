@@ -7,46 +7,146 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F6F4FAC1BEFC689005E6F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F4FAB1BEFC689005E6F28 /* AppDelegate.swift */; };
-		2F6F4FAE1BEFC689005E6F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F4FAD1BEFC689005E6F28 /* ViewController.swift */; };
-		2F6F4FB11BEFC689005E6F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F4FAF1BEFC689005E6F28 /* Main.storyboard */; };
-		2F6F4FB31BEFC689005E6F28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F4FB21BEFC689005E6F28 /* Images.xcassets */; };
-		2F6F4FB61BEFC689005E6F28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F4FB41BEFC689005E6F28 /* LaunchScreen.xib */; };
-		2F6F4FC21BEFC689005E6F28 /* ParkingBeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F4FC11BEFC689005E6F28 /* ParkingBeeTests.swift */; };
+		2FACC59F1BF2E35100B2875A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC59E1BF2E35100B2875A /* DetailViewController.swift */; };
+		2FACC5A61BF2E80400B2875A /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FACC5A01BF2E80400B2875A /* FacebookSDKStrings.bundle */; };
+		2FACC5A71BF2E80400B2875A /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5A11BF2E80400B2875A /* FBAudienceNetwork.framework */; };
+		2FACC5A81BF2E80400B2875A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5A21BF2E80400B2875A /* FBSDKCoreKit.framework */; };
+		2FACC5A91BF2E80400B2875A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5A31BF2E80400B2875A /* FBSDKLoginKit.framework */; };
+		2FACC5AA1BF2E80400B2875A /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5A41BF2E80400B2875A /* FBSDKMessengerShareKit.framework */; };
+		2FACC5AB1BF2E80400B2875A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5A51BF2E80400B2875A /* FBSDKShareKit.framework */; };
+		2FACC5AD1BF2E98800B2875A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5AC1BF2E98800B2875A /* AudioToolbox.framework */; };
+		2FACC5AF1BF2E98E00B2875A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5AE1BF2E98E00B2875A /* CFNetwork.framework */; };
+		2FACC5B11BF2E99500B2875A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5B01BF2E99500B2875A /* CoreGraphics.framework */; };
+		2FACC5B31BF2E99B00B2875A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5B21BF2E99B00B2875A /* CoreLocation.framework */; };
+		2FACC5B51BF2E9A300B2875A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5B41BF2E9A300B2875A /* QuartzCore.framework */; };
+		2FACC5B71BF2E9AB00B2875A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5B61BF2E9AB00B2875A /* Security.framework */; };
+		2FACC5B91BF2E9B100B2875A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5B81BF2E9B100B2875A /* StoreKit.framework */; };
+		2FACC5BB1BF2E9BA00B2875A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5BA1BF2E9BA00B2875A /* SystemConfiguration.framework */; };
+		2FACC5BD1BF2E9C200B2875A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5BC1BF2E9C100B2875A /* libz.tbd */; };
+		2FACC5BF1BF2E9CF00B2875A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5BE1BF2E9CF00B2875A /* libsqlite3.tbd */; };
+		2FACC5C11BF2E9D700B2875A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C01BF2E9D700B2875A /* Accounts.framework */; };
+		2FACC5C31BF2E9DF00B2875A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C21BF2E9DF00B2875A /* Social.framework */; };
+		2FACC5CC1BF2EA2D00B2875A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C51BF2EA2D00B2875A /* Bolts.framework */; };
+		2FACC5CD1BF2EA2D00B2875A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C61BF2EA2D00B2875A /* Parse.framework */; };
+		2FACC5CE1BF2EA2D00B2875A /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C71BF2EA2D00B2875A /* ParseCrashReporting.framework */; };
+		2FACC5CF1BF2EA2D00B2875A /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C81BF2EA2D00B2875A /* ParseFacebookUtils.framework */; };
+		2FACC5D01BF2EA2D00B2875A /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5C91BF2EA2D00B2875A /* ParseFacebookUtilsV4.framework */; };
+		2FACC5D11BF2EA2D00B2875A /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5CA1BF2EA2D00B2875A /* ParseTwitterUtils.framework */; };
+		2FACC5D21BF2EA2D00B2875A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACC5CB1BF2EA2D00B2875A /* ParseUI.framework */; };
+		2FACC5D41BF2EE3500B2875A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC5D31BF2EE3500B2875A /* LogInViewController.swift */; };
+		652173BC1BEFE31F00753857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173BB1BEFE31F00753857 /* AppDelegate.swift */; };
+		652173BE1BEFE31F00753857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173BD1BEFE31F00753857 /* ViewController.swift */; };
+		652173C11BEFE31F00753857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652173BF1BEFE31F00753857 /* Main.storyboard */; };
+		652173C31BEFE31F00753857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652173C21BEFE31F00753857 /* Assets.xcassets */; };
+		652173C61BEFE31F00753857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652173C41BEFE31F00753857 /* LaunchScreen.storyboard */; };
+		652173D11BEFE31F00753857 /* parkingBeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173D01BEFE31F00753857 /* parkingBeeTests.swift */; };
+		652173DC1BEFE31F00753857 /* parkingBeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173DB1BEFE31F00753857 /* parkingBeeUITests.swift */; };
+		652173EA1BEFE8FB00753857 /* confirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173E91BEFE8FB00753857 /* confirmViewController.swift */; };
+		652173EE1BEFEF6D00753857 /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652173ED1BEFEF6D00753857 /* JSSAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F6F4FBC1BEFC689005E6F28 /* PBXContainerItemProxy */ = {
+		652173CD1BEFE31F00753857 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2F6F4F9E1BEFC689005E6F28 /* Project object */;
+			containerPortal = 652173B01BEFE31F00753857 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F6F4FA51BEFC689005E6F28;
-			remoteInfo = ParkingBee;
+			remoteGlobalIDString = 652173B71BEFE31F00753857;
+			remoteInfo = parkingBee;
+		};
+		652173D81BEFE31F00753857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652173B01BEFE31F00753857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652173B71BEFE31F00753857;
+			remoteInfo = parkingBee;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F6F4FA61BEFC689005E6F28 /* ParkingBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F6F4FAA1BEFC689005E6F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F6F4FAB1BEFC689005E6F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F6F4FAD1BEFC689005E6F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F6F4FB01BEFC689005E6F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F6F4FB21BEFC689005E6F28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2F6F4FB51BEFC689005E6F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2F6F4FBB1BEFC689005E6F28 /* ParkingBeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingBeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F6F4FC01BEFC689005E6F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F6F4FC11BEFC689005E6F28 /* ParkingBeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingBeeTests.swift; sourceTree = "<group>"; };
+		2FACC59E1BF2E35100B2875A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		2FACC5A01BF2E80400B2875A /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = parkingBee/FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		2FACC5A11BF2E80400B2875A /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = parkingBee/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		2FACC5A21BF2E80400B2875A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = parkingBee/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2FACC5A31BF2E80400B2875A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = parkingBee/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2FACC5A41BF2E80400B2875A /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = parkingBee/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		2FACC5A51BF2E80400B2875A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = parkingBee/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2FACC5AC1BF2E98800B2875A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2FACC5AE1BF2E98E00B2875A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2FACC5B01BF2E99500B2875A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FACC5B21BF2E99B00B2875A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2FACC5B41BF2E9A300B2875A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2FACC5B61BF2E9AB00B2875A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FACC5B81BF2E9B100B2875A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2FACC5BA1BF2E9BA00B2875A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2FACC5BC1BF2E9C100B2875A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2FACC5BE1BF2E9CF00B2875A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2FACC5C01BF2E9D700B2875A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2FACC5C21BF2E9DF00B2875A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2FACC5C51BF2EA2D00B2875A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2FACC5C61BF2EA2D00B2875A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2FACC5C71BF2EA2D00B2875A /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		2FACC5C81BF2EA2D00B2875A /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		2FACC5C91BF2EA2D00B2875A /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		2FACC5CA1BF2EA2D00B2875A /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		2FACC5CB1BF2EA2D00B2875A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		2FACC5D31BF2EE3500B2875A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		652173B81BEFE31F00753857 /* parkingBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parkingBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		652173BB1BEFE31F00753857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		652173BD1BEFE31F00753857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		652173C01BEFE31F00753857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		652173C21BEFE31F00753857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		652173C51BEFE31F00753857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		652173C71BEFE31F00753857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652173CC1BEFE31F00753857 /* parkingBeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkingBeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652173D01BEFE31F00753857 /* parkingBeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingBeeTests.swift; sourceTree = "<group>"; };
+		652173D21BEFE31F00753857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652173D71BEFE31F00753857 /* parkingBeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkingBeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652173DB1BEFE31F00753857 /* parkingBeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkingBeeUITests.swift; sourceTree = "<group>"; };
+		652173DD1BEFE31F00753857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652173E91BEFE8FB00753857 /* confirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmViewController.swift; sourceTree = "<group>"; };
+		652173ED1BEFEF6D00753857 /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F6F4FA31BEFC689005E6F28 /* Frameworks */ = {
+		652173B51BEFE31F00753857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FACC5C31BF2E9DF00B2875A /* Social.framework in Frameworks */,
+				2FACC5C11BF2E9D700B2875A /* Accounts.framework in Frameworks */,
+				2FACC5BF1BF2E9CF00B2875A /* libsqlite3.tbd in Frameworks */,
+				2FACC5BD1BF2E9C200B2875A /* libz.tbd in Frameworks */,
+				2FACC5BB1BF2E9BA00B2875A /* SystemConfiguration.framework in Frameworks */,
+				2FACC5D11BF2EA2D00B2875A /* ParseTwitterUtils.framework in Frameworks */,
+				2FACC5D21BF2EA2D00B2875A /* ParseUI.framework in Frameworks */,
+				2FACC5B91BF2E9B100B2875A /* StoreKit.framework in Frameworks */,
+				2FACC5B71BF2E9AB00B2875A /* Security.framework in Frameworks */,
+				2FACC5B51BF2E9A300B2875A /* QuartzCore.framework in Frameworks */,
+				2FACC5B31BF2E99B00B2875A /* CoreLocation.framework in Frameworks */,
+				2FACC5B11BF2E99500B2875A /* CoreGraphics.framework in Frameworks */,
+				2FACC5D01BF2EA2D00B2875A /* ParseFacebookUtilsV4.framework in Frameworks */,
+				2FACC5AF1BF2E98E00B2875A /* CFNetwork.framework in Frameworks */,
+				2FACC5CE1BF2EA2D00B2875A /* ParseCrashReporting.framework in Frameworks */,
+				2FACC5AD1BF2E98800B2875A /* AudioToolbox.framework in Frameworks */,
+				2FACC5AA1BF2E80400B2875A /* FBSDKMessengerShareKit.framework in Frameworks */,
+				2FACC5CF1BF2EA2D00B2875A /* ParseFacebookUtils.framework in Frameworks */,
+				2FACC5CD1BF2EA2D00B2875A /* Parse.framework in Frameworks */,
+				2FACC5A71BF2E80400B2875A /* FBAudienceNetwork.framework in Frameworks */,
+				2FACC5AB1BF2E80400B2875A /* FBSDKShareKit.framework in Frameworks */,
+				2FACC5CC1BF2EA2D00B2875A /* Bolts.framework in Frameworks */,
+				2FACC5A81BF2E80400B2875A /* FBSDKCoreKit.framework in Frameworks */,
+				2FACC5A91BF2E80400B2875A /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652173C91BEFE31F00753857 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F6F4FB81BEFC689005E6F28 /* Frameworks */ = {
+		652173D41BEFE31F00753857 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,119 +156,174 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F6F4F9D1BEFC689005E6F28 = {
+		2FACC5C41BF2E9E700B2875A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F4FA81BEFC689005E6F28 /* ParkingBee */,
-				2F6F4FBE1BEFC689005E6F28 /* ParkingBeeTests */,
-				2F6F4FA71BEFC689005E6F28 /* Products */,
+				2FACC5C51BF2EA2D00B2875A /* Bolts.framework */,
+				2FACC5C61BF2EA2D00B2875A /* Parse.framework */,
+				2FACC5C71BF2EA2D00B2875A /* ParseCrashReporting.framework */,
+				2FACC5C81BF2EA2D00B2875A /* ParseFacebookUtils.framework */,
+				2FACC5C91BF2EA2D00B2875A /* ParseFacebookUtilsV4.framework */,
+				2FACC5CA1BF2EA2D00B2875A /* ParseTwitterUtils.framework */,
+				2FACC5CB1BF2EA2D00B2875A /* ParseUI.framework */,
+				2FACC5A01BF2E80400B2875A /* FacebookSDKStrings.bundle */,
+				2FACC5A11BF2E80400B2875A /* FBAudienceNetwork.framework */,
+				2FACC5A21BF2E80400B2875A /* FBSDKCoreKit.framework */,
+				2FACC5A31BF2E80400B2875A /* FBSDKLoginKit.framework */,
+				2FACC5A41BF2E80400B2875A /* FBSDKMessengerShareKit.framework */,
+				2FACC5A51BF2E80400B2875A /* FBSDKShareKit.framework */,
+				2FACC5C21BF2E9DF00B2875A /* Social.framework */,
+				2FACC5C01BF2E9D700B2875A /* Accounts.framework */,
+				2FACC5BE1BF2E9CF00B2875A /* libsqlite3.tbd */,
+				2FACC5BC1BF2E9C100B2875A /* libz.tbd */,
+				2FACC5BA1BF2E9BA00B2875A /* SystemConfiguration.framework */,
+				2FACC5B81BF2E9B100B2875A /* StoreKit.framework */,
+				2FACC5B61BF2E9AB00B2875A /* Security.framework */,
+				2FACC5B41BF2E9A300B2875A /* QuartzCore.framework */,
+				2FACC5B21BF2E99B00B2875A /* CoreLocation.framework */,
+				2FACC5B01BF2E99500B2875A /* CoreGraphics.framework */,
+				2FACC5AE1BF2E98E00B2875A /* CFNetwork.framework */,
+				2FACC5AC1BF2E98800B2875A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		652173AF1BEFE31F00753857 = {
+			isa = PBXGroup;
+			children = (
+				652173BA1BEFE31F00753857 /* parkingBee */,
+				2FACC5C41BF2E9E700B2875A /* Frameworks */,
+				652173CF1BEFE31F00753857 /* parkingBeeTests */,
+				652173DA1BEFE31F00753857 /* parkingBeeUITests */,
+				652173B91BEFE31F00753857 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2F6F4FA71BEFC689005E6F28 /* Products */ = {
+		652173B91BEFE31F00753857 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F4FA61BEFC689005E6F28 /* ParkingBee.app */,
-				2F6F4FBB1BEFC689005E6F28 /* ParkingBeeTests.xctest */,
+				652173B81BEFE31F00753857 /* parkingBee.app */,
+				652173CC1BEFE31F00753857 /* parkingBeeTests.xctest */,
+				652173D71BEFE31F00753857 /* parkingBeeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F6F4FA81BEFC689005E6F28 /* ParkingBee */ = {
+		652173BA1BEFE31F00753857 /* parkingBee */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F4FAB1BEFC689005E6F28 /* AppDelegate.swift */,
-				2F6F4FAD1BEFC689005E6F28 /* ViewController.swift */,
-				2F6F4FAF1BEFC689005E6F28 /* Main.storyboard */,
-				2F6F4FB21BEFC689005E6F28 /* Images.xcassets */,
-				2F6F4FB41BEFC689005E6F28 /* LaunchScreen.xib */,
-				2F6F4FA91BEFC689005E6F28 /* Supporting Files */,
+				652173BB1BEFE31F00753857 /* AppDelegate.swift */,
+				2FACC59E1BF2E35100B2875A /* DetailViewController.swift */,
+				652173BD1BEFE31F00753857 /* ViewController.swift */,
+				652173BF1BEFE31F00753857 /* Main.storyboard */,
+				2FACC5D31BF2EE3500B2875A /* LogInViewController.swift */,
+				652173C21BEFE31F00753857 /* Assets.xcassets */,
+				652173C41BEFE31F00753857 /* LaunchScreen.storyboard */,
+				652173C71BEFE31F00753857 /* Info.plist */,
+				652173E91BEFE8FB00753857 /* confirmViewController.swift */,
+				652173ED1BEFEF6D00753857 /* JSSAlertView.swift */,
 			);
-			path = ParkingBee;
+			path = parkingBee;
 			sourceTree = "<group>";
 		};
-		2F6F4FA91BEFC689005E6F28 /* Supporting Files */ = {
+		652173CF1BEFE31F00753857 /* parkingBeeTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F4FAA1BEFC689005E6F28 /* Info.plist */,
+				652173D01BEFE31F00753857 /* parkingBeeTests.swift */,
+				652173D21BEFE31F00753857 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = parkingBeeTests;
 			sourceTree = "<group>";
 		};
-		2F6F4FBE1BEFC689005E6F28 /* ParkingBeeTests */ = {
+		652173DA1BEFE31F00753857 /* parkingBeeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2F6F4FC11BEFC689005E6F28 /* ParkingBeeTests.swift */,
-				2F6F4FBF1BEFC689005E6F28 /* Supporting Files */,
+				652173DB1BEFE31F00753857 /* parkingBeeUITests.swift */,
+				652173DD1BEFE31F00753857 /* Info.plist */,
 			);
-			path = ParkingBeeTests;
-			sourceTree = "<group>";
-		};
-		2F6F4FBF1BEFC689005E6F28 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F6F4FC01BEFC689005E6F28 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = parkingBeeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F6F4FA51BEFC689005E6F28 /* ParkingBee */ = {
+		652173B71BEFE31F00753857 /* parkingBee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F6F4FC51BEFC689005E6F28 /* Build configuration list for PBXNativeTarget "ParkingBee" */;
+			buildConfigurationList = 652173E01BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBee" */;
 			buildPhases = (
-				2F6F4FA21BEFC689005E6F28 /* Sources */,
-				2F6F4FA31BEFC689005E6F28 /* Frameworks */,
-				2F6F4FA41BEFC689005E6F28 /* Resources */,
+				652173B41BEFE31F00753857 /* Sources */,
+				652173B51BEFE31F00753857 /* Frameworks */,
+				652173B61BEFE31F00753857 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ParkingBee;
-			productName = ParkingBee;
-			productReference = 2F6F4FA61BEFC689005E6F28 /* ParkingBee.app */;
+			name = parkingBee;
+			productName = parkingBee;
+			productReference = 652173B81BEFE31F00753857 /* parkingBee.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F6F4FBA1BEFC689005E6F28 /* ParkingBeeTests */ = {
+		652173CB1BEFE31F00753857 /* parkingBeeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F6F4FC81BEFC68A005E6F28 /* Build configuration list for PBXNativeTarget "ParkingBeeTests" */;
+			buildConfigurationList = 652173E31BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBeeTests" */;
 			buildPhases = (
-				2F6F4FB71BEFC689005E6F28 /* Sources */,
-				2F6F4FB81BEFC689005E6F28 /* Frameworks */,
-				2F6F4FB91BEFC689005E6F28 /* Resources */,
+				652173C81BEFE31F00753857 /* Sources */,
+				652173C91BEFE31F00753857 /* Frameworks */,
+				652173CA1BEFE31F00753857 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F6F4FBD1BEFC689005E6F28 /* PBXTargetDependency */,
+				652173CE1BEFE31F00753857 /* PBXTargetDependency */,
 			);
-			name = ParkingBeeTests;
-			productName = ParkingBeeTests;
-			productReference = 2F6F4FBB1BEFC689005E6F28 /* ParkingBeeTests.xctest */;
+			name = parkingBeeTests;
+			productName = parkingBeeTests;
+			productReference = 652173CC1BEFE31F00753857 /* parkingBeeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		652173D61BEFE31F00753857 /* parkingBeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652173E61BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBeeUITests" */;
+			buildPhases = (
+				652173D31BEFE31F00753857 /* Sources */,
+				652173D41BEFE31F00753857 /* Frameworks */,
+				652173D51BEFE31F00753857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652173D91BEFE31F00753857 /* PBXTargetDependency */,
+			);
+			name = parkingBeeUITests;
+			productName = parkingBeeUITests;
+			productReference = 652173D71BEFE31F00753857 /* parkingBeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F6F4F9E1BEFC689005E6F28 /* Project object */ = {
+		652173B01BEFE31F00753857 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "MTSS User";
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ParkingBee;
 				TargetAttributes = {
-					2F6F4FA51BEFC689005E6F28 = {
-						CreatedOnToolsVersion = 6.2;
+					652173B71BEFE31F00753857 = {
+						CreatedOnToolsVersion = 7.1;
 					};
-					2F6F4FBA1BEFC689005E6F28 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 2F6F4FA51BEFC689005E6F28;
+					652173CB1BEFE31F00753857 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 652173B71BEFE31F00753857;
+					};
+					652173D61BEFE31F00753857 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 652173B71BEFE31F00753857;
 					};
 				};
 			};
-			buildConfigurationList = 2F6F4FA11BEFC689005E6F28 /* Build configuration list for PBXProject "ParkingBee" */;
+			buildConfigurationList = 652173B31BEFE31F00753857 /* Build configuration list for PBXProject "parkingBee" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +331,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F6F4F9D1BEFC689005E6F28;
-			productRefGroup = 2F6F4FA71BEFC689005E6F28 /* Products */;
+			mainGroup = 652173AF1BEFE31F00753857;
+			productRefGroup = 652173B91BEFE31F00753857 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F6F4FA51BEFC689005E6F28 /* ParkingBee */,
-				2F6F4FBA1BEFC689005E6F28 /* ParkingBeeTests */,
+				652173B71BEFE31F00753857 /* parkingBee */,
+				652173CB1BEFE31F00753857 /* parkingBeeTests */,
+				652173D61BEFE31F00753857 /* parkingBeeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F6F4FA41BEFC689005E6F28 /* Resources */ = {
+		652173B61BEFE31F00753857 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6F4FB11BEFC689005E6F28 /* Main.storyboard in Resources */,
-				2F6F4FB61BEFC689005E6F28 /* LaunchScreen.xib in Resources */,
-				2F6F4FB31BEFC689005E6F28 /* Images.xcassets in Resources */,
+				652173C61BEFE31F00753857 /* LaunchScreen.storyboard in Resources */,
+				652173C31BEFE31F00753857 /* Assets.xcassets in Resources */,
+				652173C11BEFE31F00753857 /* Main.storyboard in Resources */,
+				2FACC5A61BF2E80400B2875A /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F6F4FB91BEFC689005E6F28 /* Resources */ = {
+		652173CA1BEFE31F00753857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652173D51BEFE31F00753857 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,54 +372,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F6F4FA21BEFC689005E6F28 /* Sources */ = {
+		652173B41BEFE31F00753857 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6F4FAE1BEFC689005E6F28 /* ViewController.swift in Sources */,
-				2F6F4FAC1BEFC689005E6F28 /* AppDelegate.swift in Sources */,
+				652173EE1BEFEF6D00753857 /* JSSAlertView.swift in Sources */,
+				652173BE1BEFE31F00753857 /* ViewController.swift in Sources */,
+				2FACC5D41BF2EE3500B2875A /* LogInViewController.swift in Sources */,
+				2FACC59F1BF2E35100B2875A /* DetailViewController.swift in Sources */,
+				652173BC1BEFE31F00753857 /* AppDelegate.swift in Sources */,
+				652173EA1BEFE8FB00753857 /* confirmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F6F4FB71BEFC689005E6F28 /* Sources */ = {
+		652173C81BEFE31F00753857 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6F4FC21BEFC689005E6F28 /* ParkingBeeTests.swift in Sources */,
+				652173D11BEFE31F00753857 /* parkingBeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652173D31BEFE31F00753857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652173DC1BEFE31F00753857 /* parkingBeeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F6F4FBD1BEFC689005E6F28 /* PBXTargetDependency */ = {
+		652173CE1BEFE31F00753857 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F6F4FA51BEFC689005E6F28 /* ParkingBee */;
-			targetProxy = 2F6F4FBC1BEFC689005E6F28 /* PBXContainerItemProxy */;
+			target = 652173B71BEFE31F00753857 /* parkingBee */;
+			targetProxy = 652173CD1BEFE31F00753857 /* PBXContainerItemProxy */;
+		};
+		652173D91BEFE31F00753857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652173B71BEFE31F00753857 /* parkingBee */;
+			targetProxy = 652173D81BEFE31F00753857 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2F6F4FAF1BEFC689005E6F28 /* Main.storyboard */ = {
+		652173BF1BEFE31F00753857 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F6F4FB01BEFC689005E6F28 /* Base */,
+				652173C01BEFE31F00753857 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2F6F4FB41BEFC689005E6F28 /* LaunchScreen.xib */ = {
+		652173C41BEFE31F00753857 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F6F4FB51BEFC689005E6F28 /* Base */,
+				652173C51BEFE31F00753857 /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2F6F4FC31BEFC689005E6F28 /* Debug */ = {
+		652173DE1BEFE31F00753857 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,30 +455,33 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2F6F4FC41BEFC689005E6F28 /* Release */ = {
+		652173DF1BEFE31F00753857 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,105 +500,145 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2F6F4FC61BEFC689005E6F28 /* Debug */ = {
+		652173E11BEFE31F00753857 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ParkingBee/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parkingBee",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = parkingBee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pawprint.parkingBee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2F6F4FC71BEFC689005E6F28 /* Release */ = {
+		652173E21BEFE31F00753857 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ParkingBee/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parkingBee",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = parkingBee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pawprint.parkingBee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		2F6F4FC91BEFC68A005E6F28 /* Debug */ = {
+		652173E41BEFE31F00753857 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ParkingBeeTests/Info.plist;
+				INFOPLIST_FILE = parkingBeeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DS.parkingBeeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingBee.app/ParkingBee";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parkingBee.app/parkingBee";
 			};
 			name = Debug;
 		};
-		2F6F4FCA1BEFC68A005E6F28 /* Release */ = {
+		652173E51BEFE31F00753857 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ParkingBeeTests/Info.plist;
+				INFOPLIST_FILE = parkingBeeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DS.parkingBeeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingBee.app/ParkingBee";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parkingBee.app/parkingBee";
+			};
+			name = Release;
+		};
+		652173E71BEFE31F00753857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = parkingBeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DS.parkingBeeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = parkingBee;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		652173E81BEFE31F00753857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = parkingBeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DS.parkingBeeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = parkingBee;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F6F4FA11BEFC689005E6F28 /* Build configuration list for PBXProject "ParkingBee" */ = {
+		652173B31BEFE31F00753857 /* Build configuration list for PBXProject "parkingBee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F6F4FC31BEFC689005E6F28 /* Debug */,
-				2F6F4FC41BEFC689005E6F28 /* Release */,
+				652173DE1BEFE31F00753857 /* Debug */,
+				652173DF1BEFE31F00753857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F6F4FC51BEFC689005E6F28 /* Build configuration list for PBXNativeTarget "ParkingBee" */ = {
+		652173E01BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F6F4FC61BEFC689005E6F28 /* Debug */,
-				2F6F4FC71BEFC689005E6F28 /* Release */,
+				652173E11BEFE31F00753857 /* Debug */,
+				652173E21BEFE31F00753857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		2F6F4FC81BEFC68A005E6F28 /* Build configuration list for PBXNativeTarget "ParkingBeeTests" */ = {
+		652173E31BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBeeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F6F4FC91BEFC68A005E6F28 /* Debug */,
-				2F6F4FCA1BEFC68A005E6F28 /* Release */,
+				652173E41BEFE31F00753857 /* Debug */,
+				652173E51BEFE31F00753857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652173E61BEFE31F00753857 /* Build configuration list for PBXNativeTarget "parkingBeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652173E71BEFE31F00753857 /* Debug */,
+				652173E81BEFE31F00753857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F6F4F9E1BEFC689005E6F28 /* Project object */;
+	rootObject = 652173B01BEFE31F00753857 /* Project object */;
 }
