@@ -19,18 +19,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        FBSDKAppEvents.activateApp()
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        Parse.enableLocalDatastore()
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions([NSObject: AnyObject]())
+        //FBSDKAppEvents.activateApp()
+        //FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        //Parse.enableLocalDatastore()
+       
         Parse.setApplicationId("rgMdaZeJsX181TmJzdbOda05YGMHOG0xtCD7UWXv",
             clientKey: "4K6W6DGRiBZNqT5ZZ7FsqgrRnbSWskHG0A9XxyGX")
-
+        
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+
+        let navBarFont = UIFont(name: "HelveticaNeue-Light", size: 25.0)
+
         
+         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navBarFont!, NSForegroundColorAttributeName: UIColor(red: 255.0/255.0, green: 185.0/255.0, blue: 58.0/255.0, alpha: 1.0)]
+       // UINavigationBar.appearance().translucent = false
         
-        return true
+
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -53,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
     }
     
   
